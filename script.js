@@ -5,11 +5,15 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
+
+  if (question.innerHTML == "🤔🤔🤔🤔🤔?") {
+    location.href = "https://www.youtube.com/watch?v=UHH7b4-UkvI";
+  }
+
+
   question.innerHTML = "🤔🤔🤔🤔🤔?";
   gif.src =
     "https://media.giphy.com/media/AF3ruB8fuaiiI/giphy.gif";
-    // yesBtn.style.display = 'none';
-    // noBtn.style.display = 'none';
 });
 
 noBtn.addEventListener("mouseover", () => {
